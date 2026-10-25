@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seu Nome — Técnico de TI | Futuro Dev Backend</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">
+        <span class="accent">&lt;</span>SeuNome<span class="accent">/&gt;</span>
+      </span>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#aprendendo">Aprendendo</a></li>
+        <li><a href="#contato" class="btn-nav">Contato</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <p class="hero-tag">👋 Olá, me chamo</p>
+      <h1 class="hero-title">Seu Nome<span class="accent">.</span></h1>
+      <h2 class="hero-subtitle">
+        Técnico de TI em transição para
+        <span class="typewriter" id="typewriter"></span>
+      </h2>
+      <p class="hero-desc">
+        Profissional de suporte com sólida experiência em infraestrutura e atendimento técnico,
+        atualmente em jornada de aprendizado rumo ao desenvolvimento backend com Java.
+      </p>
+      <div class="hero-actions">
+        <a href="#habilidades" class="btn btn-primary">Ver habilidades</a>
+        <a href="#contato" class="btn btn-outline">Entre em contato</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre class="code-snippet"><code><span class="c-keyword">public class</span> <span class="c-class">Dev</span> <span class="c-keyword">extends</span> <span class="c-class">SuporteTI</span> {
+
+  <span class="c-keyword">private</span> String foco = <span class="c-string">"Backend Java"</span>;
+  <span class="c-keyword">private</span> <span class="c-class">List</span>&lt;String&gt; skills = <span class="c-class">List</span>.of(
+    <span class="c-string">"SQL"</span>, <span class="c-string">"Redes"</span>,
+    <span class="c-string">"Suporte TI"</span>, <span class="c-string">"Windows"</span>
+  );
+
+  <span class="c-keyword">public</span> String getMeta() {
+    <span class="c-keyword">return</span> <span class="c-string">"Dev Backend Júnior"</span>;
+  }
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <h2 class="section-title">Sobre mim</h2>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p>
+            Trabalho com suporte de TI e possuo experiência prática em diagnóstico de sistemas,
+            atendimento ao usuário e manutenção de infraestrutura. No dia a dia, lido com a
+            resolução de problemas técnicos — habilidade que levo comigo na transição para o desenvolvimento.
+          </p>
+          <p>
+            Atualmente estudo <strong>Java</strong> e fundamentos de desenvolvimento backend,
+            com objetivo de atuar como desenvolvedor de software. Acredito que a visão do
+            lado operacional de TI é um diferencial real na construção de sistemas mais robustos e centrados no usuário.
+          </p>
+          <div class="sobre-badges">
+            <span class="badge">📍 Brasil</span>
+            <span class="badge">💼 Aberto a oportunidades</span>
+            <span class="badge">📚 Em transição de carreira</span>
+          </div>
+        </div>
+        <div class="sobre-stats">
+          <div class="stat-card">
+            <span class="stat-num accent">SQL</span>
+            <span class="stat-label">MySQL & Firebird</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num accent">TI</span>
+            <span class="stat-label">Suporte & Infraestrutura</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num accent">☕</span>
+            <span class="stat-label">Aprendendo Java</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num accent">🎯</span>
+            <span class="stat-label">Foco em Backend</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HABILIDADES ===== -->
+  <section class="section section-alt" id="habilidades">
+    <div class="container">
+      <h2 class="section-title">Habilidades Atuais</h2>
+      <p class="section-subtitle">O que eu já sei fazer — e uso no dia a dia</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="skill-icon">🗄️</div>
+          <h3>Banco de Dados</h3>
+          <ul class="skill-list">
+            <li><span class="skill-dot"></span>SQL — Consultas e manipulação de dados</li>
+            <li><span class="skill-dot"></span>MySQL — Administração básica</li>
+            <li><span class="skill-dot"></span>Firebird — Consultas e suporte</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-icon">🖥️</div>
+          <h3>Suporte & Windows</h3>
+          <ul class="skill-list">
+            <li><span class="skill-dot"></span>Acesso remoto (AnyDesk, TeamViewer)</li>
+            <li><span class="skill-dot"></span>Regedit — Edição de registro</li>
+            <li><span class="skill-dot"></span>Serviços e processos do Windows</li>
+            <li><span class="skill-dot"></span>Active Directory (básico)</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-icon">🌐</div>
+          <h3>Redes</h3>
+          <ul class="skill-list">
+            <li><span class="skill-dot"></span>Configuração de redes locais (LAN)</li>
+            <li><span class="skill-dot"></span>TCP/IP, DNS, DHCP</li>
+            <li><span class="skill-dot"></span>Diagnóstico de conectividade</li>
+            <li><span class="skill-dot"></span>Roteadores e switches</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-icon">🔧</div>
+          <h3>Hardware & Periféricos</h3>
+          <ul class="skill-list">
+            <li><span class="skill-dot"></span>Manutenção preventiva e corretiva</li>
+            <li><span class="skill-dot"></span>Montagem e upgrade de computadores</li>
+            <li><span class="skill-dot"></span>Configuração de impressoras</li>
+            <li><span class="skill-dot"></span>Diagnóstico de falhas de hardware</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APRENDENDO ===== -->
+  <section class="section" id="aprendendo">
+    <div class="container">
+      <h2 class="section-title">Em Aprendizado</h2>
+      <p class="section-subtitle">Tecnologias que estou estudando agora com foco em backend</p>
+
+      <div class="learning-grid">
+
+        <div class="learning-card active">
+          <div class="learning-header">
+            <span class="learning-icon">☕</span>
+            <div>
+              <h3>Java</h3>
+              <span class="status-badge studying">Estudando agora</span>
+            </div>
+          </div>
+          <p>Linguagem principal do meu foco em backend. Aprendendo sintaxe, Orientação a Objetos e estruturas de dados.</p>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 20%"></div>
+          </div>
+          <span class="progress-label">Em andamento</span>
+        </div>
+
+        <div class="learning-card">
+          <div class="learning-header">
+            <span class="learning-icon">🌱</span>
+            <div>
+              <h3>Spring Boot</h3>
+              <span class="status-badge planned">Próximo passo</span>
+            </div>
+          </div>
+          <p>Framework Java para construção de APIs REST robustas. Usado em grandes empresas do mercado.</p>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%"></div>
+          </div>
+          <span class="progress-label">Em breve</span>
+        </div>
+
+        <div class="learning-card">
+          <div class="learning-header">
+            <span class="learning-icon">🐘</span>
+            <div>
+              <h3>PostgreSQL</h3>
+              <span class="status-badge planned">Próximo passo</span>
+            </div>
+          </div>
+          <p>Banco de dados relacional mais robusto do mercado. Vou aprofundar o conhecimento que já tenho em SQL.</p>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 5%"></div>
+          </div>
+          <span class="progress-label">Base em SQL já adquirida</span>
+        </div>
+
+        <div class="learning-card">
+          <div class="learning-header">
+            <span class="learning-icon">⚛️</span>
+            <div>
+              <h3>React</h3>
+              <span class="status-badge future">Futuro</span>
+            </div>
+          </div>
+          <p>Framework frontend para criar interfaces modernas. Planejado após solidificar o backend com Java.</p>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%"></div>
+          </div>
+          <span class="progress-label">Na fila</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="section section-alt" id="contato">
+    <div class="container">
+      <h2 class="section-title">Contato</h2>
+      <p class="section-subtitle">Vamos conversar? Estou aberto a oportunidades e conexões!</p>
+
+      <div class="contact-grid">
+        <a href="https://linkedin.com/in/seu-usuario" target="_blank" class="contact-card">
+          <span class="contact-icon">💼</span>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/seu-usuario</span>
+        </a>
+        <a href="https://github.com/seu-usuario" target="_blank" class="contact-card">
+          <span class="contact-icon">🐙</span>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/seu-usuario</span>
+        </a>
+        <a href="mailto:seu@email.com" class="contact-card">
+          <span class="contact-icon">📧</span>
+          <span class="contact-label">E-mail</span>
+          <span class="contact-value">seu@email.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>
+      Feito com <span class="accent">❤️</span> e HTML puro por
+      <span class="accent">Seu Nome</span>
+      · Hospedado no GitHub Pages
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
